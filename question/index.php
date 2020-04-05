@@ -221,7 +221,7 @@
                                     <td><?=$count_questions;?></td>
                                         <td><div class="btn-group btn-group-xl">
                                                 <a href="../question/add_question.php?id=<?=$columns->id;?>" class="btn btn-info"><i class="fas fa-check"> Manage Test</i></a>
-                                                <a href="index.php" class="btn btn-success"><i class="fas fa-check"> Edit Test</i></a>
+                                                <a href="edit_test.php?id=<?=$columns->id;?>" class="btn btn-success"><i class="fas fa-check"> Edit Test</i></a>
                                             
                                             </div>
                                         </td>

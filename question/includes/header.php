@@ -1,8 +1,15 @@
 <?php
-
-include_once('../php/init.php');
   session_start();
+include_once('../php/init.php');
+if(isset($_SESSION['staff_id'])){
+
   $staff_id = $_SESSION['staff_id'];
+}else{
+  echo "<script>window.open('../teacher/login.php','_self')</script>";
+
+}
+
+ 
 
 ?>
 <!DOCTYPE html>
@@ -164,13 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
         </li>
 
-        <li class="nav-item dropdown">
-        <a class="nav-link"  href="includes/logout.php">
-          <i class="fa fa-sign-out-alt"> Logout</i>
-         
-        </a>
        
-      </li>
        
       </ul>
     </div>

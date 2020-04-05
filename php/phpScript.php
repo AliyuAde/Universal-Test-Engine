@@ -753,7 +753,7 @@ class Scripts {
             }
            
             $stmt->execute();
-            var_dump($stmt);
+           //  var_dump($stmt);
         }
     }
 
